@@ -1,0 +1,162 @@
+@import "tailwindcss";
+/* ONLY affects the login page */
+.loginPage {
+  background: #f3f3f3;
+  min-height: 100vh;
+  padding-top: 60px;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+/* Card */
+.loginPage__card {
+  width: 380px;
+  background: #3d3a4b;
+  padding: 35px;
+  margin: 0 auto;
+  margin-top: 70px;
+  border-radius: 6px;
+  text-align: left;
+  box-shadow: 0px 4px 14px rgba(234, 6, 6, 0.1);
+}
+
+.loginPage__card h2 {
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+/* Labels */
+.loginPage__label {
+  font-size: 14px;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  color: #ccc;
+}
+
+/* Inputs */
+.loginPage__input {
+  width: 100%;
+  height: 38px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Buttons */
+.loginPage__loginBtn {
+  margin-top: 20px;
+  width: 100%;
+  height: 42px;
+  background: rgb(17, 164, 17);
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.loginPage__loginBtn:hover {
+  background: #e5e5e5;
+}
+
+/* Footer */
+.loginPage__footerLogo {
+  text-align: center;
+  margin-top: 25px;
+  color: #4d8a45;
+  font-size: 20px;
+}
+
+/* Toggle Buttons */
+.loginPage__toggle {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.loginPage__toggle button {
+  width: 48%;
+  padding: 8px 0;
+  border: 1px solid #aaa;
+  background: #f7f7f7;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.loginPage__toggle button.active {
+  background: #e4e4e4;
+  border-color: #555;
+}
+
+/* dashboard css */
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: #e8e8e8;
+}
+
+/* Top Buttons */
+.dashboard-topbar {
+  display: flex;
+  gap: 20px;
+  background: #b30000;
+  color: white;
+  padding: 12px;
+  font-size: 18px;
+  justify-content: center;
+}
+
+.dashboard-topbar a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.dashboard-topbar a:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.exit-btn {
+  background: #222 !important;
+}
+
+/* Layout split */
+.dashboard-content {
+  display: flex;
+  height: 100%;
+}
+
+/* Sidebar */
+.dashboard-sidebar {
+  width: 180px;
+  background: #f7f7f7;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.dashboard-sidebar a {
+  background: #d4d4d4;
+  padding: 12px;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
+.dashboard-sidebar a:hover {
+  background: #c0c0c0;
+}
+
+/* Main Content */
+.dashboard-main {
+  flex-grow: 1;
+  padding: 30px;
+  background: white;
+  box-shadow: inset 0 0 5px #aaa;
+}
