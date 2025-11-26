@@ -43,3 +43,5 @@ so overall these are all the forms with the baar on with the given functionality
 4.disconnection list(the perosns who have their account disconnected with the date and time with pendig amount)
 5.New recipt generation
 6.defaulter list overall that how many persons are defaulter(for the whole dba nd then store te values )
+aounwork1@gmail.com
+Ecomback12@12
