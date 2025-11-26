@@ -1,14 +1,24 @@
-export default function DashboardHome() {
-  return (
-    <div>
-      <h1>Welcome to Family Cable Network Dashboard</h1>
-      <p>Select an option from the menus to continue.</p>
+// src/app/dashboard/page.tsx
+"use client";
+import React from 'react';
+import Layout from '../components/Layout';
+import MetricsCards from '../components/MetricsCards';
+import SearchSection from '../components/SearchSection';
+import DataTable from '../components/DataTable';
 
-      <img
-        src="/antenna.jpg"
-        alt="Dish"
-        style={{ width: "350px", marginTop: "20px", borderRadius: "10px" }}
-      />
-    </div>
+const DashboardPage: React.FC = () => {
+  const handleSearch = (query: string) => {
+    console.log('Searching for:', query);
+    // Implement your search logic here
+  };
+
+  return (
+    <Layout>
+      <MetricsCards />
+      <SearchSection onSearch={handleSearch} />
+      <DataTable />
+    </Layout>
   );
-}
+};
+
+export default DashboardPage;

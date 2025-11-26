@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
@@ -9,7 +10,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <Link href="/">Home</Link> | <Link href="/areas">Areas</Link> | <Link href="/persons">Persons</Link> <Link href="/login">login</Link>
            <Link href="/dashboard">Home</Link>
         </header>
-        <main style={{ padding: "2rem" }}>{children}</main>
+        <main style={{ padding: "2rem" }}>{children}
+
+
+        </main>
       </body>
     </html>
   );

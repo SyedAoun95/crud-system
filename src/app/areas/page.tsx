@@ -1,7 +1,8 @@
+
 "use client";
 
 import React, { useEffect, useState } from "react";
-import { initDB } from "../../services/db";
+import { initDB } from "../services/db"
 
 export default function AreasPage() {
   const [db, setDb] = useState<any>(null);
@@ -56,7 +57,7 @@ export default function AreasPage() {
         {areas.map((area) => (
           <li key={area._id}>
             {area.name}{" "}
-            <button onClick={() => deleteArea(area)} style={{ marginLeft: "1rem" }}>
+            <button onClick={() => deleteArea(area)} style={{ marginLeft: "1rem",color: "red" }}>
               Delete
             </button>
           </li>
